@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<a href="" ping=""></a>
+</body>
+<script>
+  //json数据操作，使用映射改变key值，或删减key、value对
+  const objs =[
+    {'名字':'a',age:1},
+    {'名字':'b',age:2},
+    {'名字':'c',age:3},
+    {'名字':'d',age:4},
+    {'名字':'e',age:5}
+  ]
+  const names = objs.map(objs=>{
+    return{
+      name:objs['名字']
+    }
+  })
+  console.log(names);
+</script>
+</html>
